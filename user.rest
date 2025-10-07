@@ -1,0 +1,18 @@
+### REGISTER
+POST http://localhost:8080/users HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nomor_induk" : "1902040",
+  "name": "Rikza",
+  "email": "rikza@example.com",
+  "password" : "12345678",
+  "role" : "STUDENT"
+}
+
+### GET
+GET http://localhost:8080/users HTTP/1.1
+Accept: application/json
+
+
