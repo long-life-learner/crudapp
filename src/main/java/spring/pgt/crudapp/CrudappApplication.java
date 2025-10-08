@@ -8,7 +8,6 @@ import spring.pgt.crudapp.controller.UserController;
 
 @SpringBootApplication
 public class CrudappApplication {
-
 	public static void main(String[] args) {
 		ConfigurableApplicationContext springContext = SpringApplication.run(CrudappApplication.class, args);
 
