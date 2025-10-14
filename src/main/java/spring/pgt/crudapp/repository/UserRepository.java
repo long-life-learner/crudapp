@@ -14,4 +14,6 @@ public interface UserRepository extends JpaRepository<User, String> {
     Boolean existsByNomorInduk(String nomorInduk);
 
     Optional<User> findByNomorInduk(String nomorInduk);
+
+    Optional<User> findFirstByToken(String token);
 }

@@ -4,7 +4,7 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "nomor_induk" : "1902047",
+  "nomor_induk" : "1902039",
   "name": "Rikza",
   "email": "rikza@example.com",
   "password" : "12345678",
@@ -17,21 +17,21 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "nomor_induk" : "1902039",
+  "nomor_induk" : "1902041",
   "password" : "12345678"
 }
 
 ### LOGOUT
 DELETE http://localhost:8080/logout HTTP/1.1
-Content-Type: application/json
+X-API-TOKEN : 3027f8bc-f40d-4c20-9845-f9dd08e121d0
 Accept: application/json
 
-{
-  "nomor_induk": "1902039"
-}
 
 ### GET
 GET http://localhost:8080/users HTTP/1.1
+X-API-TOKEN : 3027f8bc-f40d-4c20-9845-f9dd08e121d0
 Accept: application/json
+Content-Type: application/json
+
 
 

@@ -28,6 +28,7 @@ public class UserController {
                 .build();
     }
 
+    // READ
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public WebResponse<UserResponse> get(User user) {
         UserResponse userResponse = userService.get(user);
